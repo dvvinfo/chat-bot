@@ -5,8 +5,19 @@
       <router-link to="/about">About</router-link>
     </nav>
     <router-view />
+    <chat-app />
   </div>
 </template>
+
+<script>
+import ChatApp from "@/components/ChatApp.vue";
+export default {
+  name: "App",
+  components: {
+    ChatApp,
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
